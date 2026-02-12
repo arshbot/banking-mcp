@@ -1,6 +1,6 @@
 {
   "name": "@magnolia-financial/banking-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server wrapping the Magnolia banking API for AI agents",
   "main": "dist/index.js",
   "bin": {
