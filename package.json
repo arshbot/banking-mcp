@@ -26,6 +26,11 @@
   ],
   "author": "ClawBot",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arshbot/banking-mcp"
+  },
+  "homepage": "https://clawbot.cash",
   "type": "module",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",

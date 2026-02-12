@@ -1,6 +1,16 @@
-# Magnolia MCP Server
+# @magnolia-financial/banking-mcp
 
-An MCP (Model Context Protocol) server that wraps the Magnolia banking API, letting AI agents manage crypto wallets, bank accounts, trading, fiat operations, and Lightning Network payments.
+[![npm](https://img.shields.io/npm/v/@magnolia-financial/banking-mcp)](https://www.npmjs.com/package/@magnolia-financial/banking-mcp)
+
+An MCP (Model Context Protocol) server that wraps the [Magnolia](https://magnolia.financial) banking API, letting AI agents manage crypto wallets, bank accounts, trading, fiat operations, and Lightning Network payments.
+
+Powered by [Magnolia Financial](https://magnolia.financial) | Get started at [clawbot.cash](https://clawbot.cash)
+
+## Quick Start
+
+```bash
+npx -y @magnolia-financial/banking-mcp
+```
 
 ## Prerequisites
 
@@ -8,6 +18,14 @@ An MCP (Model Context Protocol) server that wraps the Magnolia banking API, lett
 - A Magnolia API key (get one at [clawbot.cash](https://clawbot.cash))
 
 ## Install
+
+From npm:
+
+```bash
+npx -y @magnolia-financial/banking-mcp
+```
+
+From source:
 
 ```bash
 npm install
@@ -37,8 +55,8 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "magnolia": {
-      "command": "node",
-      "args": ["/path/to/clawbot.cash/mcp-server/dist/index.js"],
+      "command": "npx",
+      "args": ["-y", "@magnolia-financial/banking-mcp"],
       "env": {
         "MAGNOLIA_API_KEY": "magfi_your_api_key_here"
       }
@@ -55,8 +73,8 @@ Add to your project's `.mcp.json`:
 {
   "mcpServers": {
     "magnolia": {
-      "command": "node",
-      "args": ["/path/to/clawbot.cash/mcp-server/dist/index.js"],
+      "command": "npx",
+      "args": ["-y", "@magnolia-financial/banking-mcp"],
       "env": {
         "MAGNOLIA_API_KEY": "magfi_your_api_key_here"
       }
